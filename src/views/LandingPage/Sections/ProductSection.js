@@ -12,6 +12,7 @@ import GridItem from "components/Grid/GridItem.js";
 import InfoArea from "components/InfoArea/InfoArea.js";
 
 import styles from "assets/jss/material-kit-react/views/landingPageSections/productStyle.js";
+import { LocalHospital, QuestionAnswer, HourglassEmpty } from "@material-ui/icons";
 
 const useStyles = makeStyles(styles);
 
@@ -36,8 +37,8 @@ export default function ProductSection() {
           <GridItem xs={12} sm={12} md={4}>
             <InfoArea
               title="Select Health Type"
-              description="Divide details about your product or agency work into parts. Write a few lines about each one. A paragraph describing a feature will be enough."
-              icon={Chat}
+              description="Select your health type to proceed in making a good decision of your health"
+              icon={LocalHospital}
               iconColor="info"
               vertical
             />
@@ -45,18 +46,18 @@ export default function ProductSection() {
           <GridItem xs={12} sm={12} md={4}>
             <InfoArea
               title="Answer Quiz Questions"
-              description="Divide details about your product or agency work into parts. Write a few lines about each one. A paragraph describing a feature will be enough."
-              icon={VerifiedUser}
-              iconColor="success"
+              description="Answer quiz questions carefully as its needed to know about your health condition properly"
+              icon={QuestionAnswer}
+              iconColor="primary"
               vertical
             />
           </GridItem>
           <GridItem xs={12} sm={12} md={4}>
             <InfoArea
               title="Get Results"
-              description="Divide details about your product or agency work into parts. Write a few lines about each one. A paragraph describing a feature will be enough."
-              icon={Fingerprint}
-              iconColor="danger"
+              description="Here you will know how is your health and what tips you have to follow in order to stay healthy and blessed life"
+              icon={HourglassEmpty}
+              iconColor="success"
               vertical
             />
           </GridItem>
